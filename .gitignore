@@ -1,0 +1,65 @@
+# =========================
+# ARCHIVOS/ CARPETAS DEL IDE
+# =========================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# VSCode
+.vscode/
+
+# =========================
+# ARCHIVOS GENERADOS
+# =========================
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# =========================
+# ENTORNOS/CONFIG
+# =========================
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+
+# Config local de proyecto
+.env
+*.local
+
+# =========================
+# JAVA
+# =========================
+*.class
+
+# Automatico de OS
+*~
