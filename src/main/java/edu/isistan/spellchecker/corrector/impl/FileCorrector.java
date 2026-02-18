@@ -18,7 +18,7 @@ public class FileCorrector extends Corrector {
 	private Map<String, Set<String>> corrections;
 
 	/** Clase especial que se utiliza al tener 
-	 * alg�n error de formato en el archivo de entrada.
+	 * algún error de formato en el archivo de entrada.
 	 */
 	public static class FormatException extends Exception {
 		public FormatException(String msg) {
@@ -30,10 +30,10 @@ public class FileCorrector extends Corrector {
 	/**
 	 * Constructor del FileReader
 	 *
-	 * Utilice un BufferedReader para leer el archivo de definici�n
+	 * Utilice un BufferedReader para leer el archivo de definición
 	 *
 	 * <p> 
-	 * Cada l�nea del archivo del diccionario tiene el siguiente formato: 
+	 * Cada línea del archivo del diccionario tiene el siguiente formato:
 	 * misspelled_word,corrected_version
 	 *
 	 * <p>
@@ -47,7 +47,7 @@ public class FileCorrector extends Corrector {
 	 * ther,there<br>
 	 * </pre>
 	 * <p>
-	 * Estas l�neas no son case-insensitive, por lo que todas deber�an generar el mismo efecto:<br>
+	 * Estas líneas no son case-insensitive, por lo que todas deberáan generar el mismo efecto:<br>
 	 * <pre>
 	 * baloon,balloon<br>
 	 * Baloon,balloon<br>
@@ -67,7 +67,7 @@ public class FileCorrector extends Corrector {
 	 * Los espacios son permitidos dentro de las sugerencias. 
 	 *
 	 * <p>
-	 * Deber�a arrojar <code>FileCorrector.FormatException</code> si se encuentra alg�n
+	 * Debería arrojar <code>FileCorrector.FormatException</code> si se encuentra algún
 	 * error de formato:<br>
 	 * <pre>
 	 * ,correct<br>
@@ -159,13 +159,13 @@ public class FileCorrector extends Corrector {
 
 	/**
 	 * Retorna una lista de correcciones para una palabra dada.
-	 * Si la palabra mal escrita no est� en el diccionario el set es vacio.
+	 * Si la palabra mal escrita no está en el diccionario el set es vacio.
 	 * <p>
 	 * Ver superclase.
 	 *
 	 * @param wrong 
-	 * @return retorna un conjunto (potencialmente vac�o) de sugerencias.
-	 * @throws IllegalArgumentException si la entrada no es una palabra v�lida 
+	 * @return retorna un conjunto (potencialmente vacío) de sugerencias.
+	 * @throws IllegalArgumentException si la entrada no es una palabra válida
 	 */
 	public Set<String> getCorrections(String wrong) {
 		if (!TokenScanner.isWord(wrong)) {

@@ -12,7 +12,7 @@ import edu.isistan.spellchecker.tokenizer.TokenScanner;
  * El diccionario maneja todas las palabras conocidas.
  * El diccionario es case insensitive 
  * 
- * Una palabra "v�lida" es una secuencia de letras (determinado por Character.isLetter) 
+ * Una palabra "válida" es una secuencia de letras (determinado por Character.isLetter)
  * o apostrofes.
  */
 public class Dictionary {
@@ -25,8 +25,8 @@ public class Dictionary {
 	/**
 	 * Construye un diccionario usando un TokenScanner
 	 * <p>
-	 * Una palabra v�lida es una secuencia de letras (ver Character.isLetter) o apostrofes.
-	 * Toda palabra no v�lida se debe ignorar
+	 * Una palabra válida es una secuencia de letras (ver Character.isLetter) o apostrofes.
+	 * Toda palabra no válida se debe ignorar
 	 *
 	 * <p>
 	 *
@@ -90,27 +90,27 @@ public class Dictionary {
 	}
 
 	/**
-	 * Retorna el n�mero de palabras correctas en el diccionario.
-	 * Recuerde que como es case insensitive si Dogs y doGs est�n en el 
+	 * Retorna el número de palabras correctas en el diccionario.
+	 * Recuerde que como es case insensitive si Dogs y doGs están en el
 	 * diccionario, cuentan como una sola palabra.
 	 * 
-	 * @return n�mero de palabras �nicas
+	 * @return número de palabras únicas
 	 */
 	public int getNumWords() {
 		return this.size;
 	}
 
 	/**
-	 * Testea si una palabra es parte del diccionario. Si la palabra no est� en
+	 * Testea si una palabra es parte del diccionario. Si la palabra no está en
 	 * el diccionario debe retornar false. null debe retornar falso.
-	 * Si en el diccionario est� la palabra Dog y se pregunta por la palabra dog
+	 * Si en el diccionario está la palabra Dog y se pregunta por la palabra dog
 	 * debe retornar true, ya que es case insensitive.
 	 *
-	 *Llamar a este m�todo no debe reabrir el archivo de palabras.
+	 *Llamar a este método no debe reabrir el archivo de palabras.
 	 *
-	 * @param word verifica si la palabra est� en el diccionario. 
+	 * @param word verifica si la palabra está en el diccionario.
 	 * Asuma que todos los espacios en blanco antes y despues de la palabra fueron removidos.
-	 * @return si la palabra est� en el diccionario.
+	 * @return si la palabra está en el diccionario.
 	 */
 	public boolean isWord(String word) {
 		if (word == null) {

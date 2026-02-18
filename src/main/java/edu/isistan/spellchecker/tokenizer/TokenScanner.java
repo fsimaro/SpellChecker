@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.NoSuchElementException;
 
 /**
- * Dado un archivo provee un m�todo para recorrerlo.
+ * Dado un archivo provee un método para recorrerlo.
  */
 public class TokenScanner implements Iterator<String> {
   private java.io.Reader reader;
@@ -17,12 +17,12 @@ public class TokenScanner implements Iterator<String> {
    * Crea un TokenScanner.
    * <p>
    * Como un iterador, el TokenScanner solo debe leer lo justo y
-   * necesario para implementar los m�todos next() y hasNext(). 
+   * necesario para implementar los métodos next() y hasNext().
    * No se debe leer toda la entrada de una.
    * <p>
    *
    * @param in fuente de entrada
-   * @throws IOException si hay alg�n error leyendo.
+   * @throws IOException si hay algún error leyendo.
    * @throws IllegalArgumentException si el Reader provisto es null
    */
   public TokenScanner(java.io.Reader in) throws IOException {
@@ -36,9 +36,9 @@ public class TokenScanner implements Iterator<String> {
   }
 
   /**
-   * Determina si un car�cer es una caracter v�lido para una palabra.
+   * Determina si un caracter es una caracter válido para una palabra.
    * <p>
-   * Un caracter v�lido es una letra (
+   * Un caracter válido es una letra (
    * Character.isLetter) o una apostrofe '\''.
    *
    * @param c 
@@ -50,10 +50,10 @@ public class TokenScanner implements Iterator<String> {
 
 
    /**
-   * Determina si un string es una palabra v�lida.
-   * Null no es una palabra v�lida.
-   * Un string que todos sus caracteres son v�lidos es una 
-   * palabra. Por lo tanto, el string vac�o NO es una palabra v�lida.
+   * Determina si un string es una palabra válida.
+   * Null no es una palabra válida.
+   * Un string que todos sus caracteres son válidos es una
+   * palabra. Por lo tanto, el string vacío NO es una palabra válida.
    * @param s 
    * @return true si el string es una palabra.
    */
@@ -80,7 +80,7 @@ public class TokenScanner implements Iterator<String> {
   /**
    * Retorna el siguiente token.
    *
-   * @throws NoSuchElementException cuando se alcanz� el final de stream
+   * @throws NoSuchElementException cuando se alcanzó el final de stream
    */
   public String next() {
     if (!hasNextToken)
